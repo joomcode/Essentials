@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		01B327211B84994F00C6B2D8 /* Essentials.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01B327201B84994F00C6B2D8 /* Essentials.h */; };
 		01B327291B84994F00C6B2D8 /* libEssentials.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B3271D1B84994F00C6B2D8 /* libEssentials.a */; };
-		01B327491B84996000C6B2D8 /* NNScrollViewWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B327391B84996000C6B2D8 /* NNScrollViewWrapper.m */; };
-		01B3274A1B84996000C6B2D8 /* NNKeyboardListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B3273C1B84996000C6B2D8 /* NNKeyboardListener.m */; };
-		01B3274B1B84996000C6B2D8 /* UIScrollView+NNKeyboardListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B3273E1B84996000C6B2D8 /* UIScrollView+NNKeyboardListener.m */; };
-		01B3274C1B84996000C6B2D8 /* NNLayoutSpacer.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B327411B84996000C6B2D8 /* NNLayoutSpacer.m */; };
-		01B3274D1B84996000C6B2D8 /* NNLayoutWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B327431B84996000C6B2D8 /* NNLayoutWrapper.m */; };
-		01B3274E1B84996000C6B2D8 /* UIViewController+NNLayoutGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B327451B84996000C6B2D8 /* UIViewController+NNLayoutGuide.m */; };
-		01B3274F1B84996000C6B2D8 /* NNTouchInterceptorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B327481B84996000C6B2D8 /* NNTouchInterceptorView.m */; };
+		01E451DE1B8B3BD70011F1B1 /* NNKeyboardListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E451C41B8B3BD70011F1B1 /* NNKeyboardListener.m */; };
+		01E451DF1B8B3BD70011F1B1 /* UIScrollView+NNKeyboardListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E451C61B8B3BD70011F1B1 /* UIScrollView+NNKeyboardListener.m */; };
+		01E451E01B8B3BD70011F1B1 /* NNLayoutSpacer.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E451C91B8B3BD70011F1B1 /* NNLayoutSpacer.m */; };
+		01E451E11B8B3BD70011F1B1 /* NNLayoutWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E451CB1B8B3BD70011F1B1 /* NNLayoutWrapper.m */; };
+		01E451E21B8B3BD70011F1B1 /* UIViewController+NNLayoutGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E451CD1B8B3BD70011F1B1 /* UIViewController+NNLayoutGuide.m */; };
+		01E451E31B8B3BD70011F1B1 /* NNScrollViewWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E451D01B8B3BD70011F1B1 /* NNScrollViewWrapper.m */; };
+		01E451E41B8B3BD70011F1B1 /* NNTouchInterceptorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E451D31B8B3BD70011F1B1 /* NNTouchInterceptorView.m */; };
+		01E451E61B8B3BD70011F1B1 /* NNLazyProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E451D91B8B3BD70011F1B1 /* NNLazyProxy.m */; };
+		01E451E71B8B3BD70011F1B1 /* NNObjectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E451DB1B8B3BD70011F1B1 /* NNObjectProxy.m */; };
+		01E451ED1B8B40B30011F1B1 /* NNAsyncInitProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E451E91B8B40B30011F1B1 /* NNAsyncInitProxy.m */; };
+		01E451EE1B8B40B30011F1B1 /* NSObject+NNProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E451EA1B8B40B30011F1B1 /* NSObject+NNProxy.m */; };
 		A2233A48A76222F60534A4C2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C140173AECCBB3559FDDCFDE /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -47,20 +51,28 @@
 		01B327201B84994F00C6B2D8 /* Essentials.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Essentials.h; sourceTree = "<group>"; };
 		01B327281B84994F00C6B2D8 /* EssentialsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01B3272E1B84994F00C6B2D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01B327381B84996000C6B2D8 /* NNScrollViewWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNScrollViewWrapper.h; sourceTree = "<group>"; };
-		01B327391B84996000C6B2D8 /* NNScrollViewWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNScrollViewWrapper.m; sourceTree = "<group>"; };
-		01B3273B1B84996000C6B2D8 /* NNKeyboardListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKeyboardListener.h; sourceTree = "<group>"; };
-		01B3273C1B84996000C6B2D8 /* NNKeyboardListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKeyboardListener.m; sourceTree = "<group>"; };
-		01B3273D1B84996000C6B2D8 /* UIScrollView+NNKeyboardListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+NNKeyboardListener.h"; sourceTree = "<group>"; };
-		01B3273E1B84996000C6B2D8 /* UIScrollView+NNKeyboardListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+NNKeyboardListener.m"; sourceTree = "<group>"; };
-		01B327401B84996000C6B2D8 /* NNLayoutSpacer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNLayoutSpacer.h; sourceTree = "<group>"; };
-		01B327411B84996000C6B2D8 /* NNLayoutSpacer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNLayoutSpacer.m; sourceTree = "<group>"; };
-		01B327421B84996000C6B2D8 /* NNLayoutWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNLayoutWrapper.h; sourceTree = "<group>"; };
-		01B327431B84996000C6B2D8 /* NNLayoutWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNLayoutWrapper.m; sourceTree = "<group>"; };
-		01B327441B84996000C6B2D8 /* UIViewController+NNLayoutGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NNLayoutGuide.h"; sourceTree = "<group>"; };
-		01B327451B84996000C6B2D8 /* UIViewController+NNLayoutGuide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NNLayoutGuide.m"; sourceTree = "<group>"; };
-		01B327471B84996000C6B2D8 /* NNTouchInterceptorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNTouchInterceptorView.h; sourceTree = "<group>"; };
-		01B327481B84996000C6B2D8 /* NNTouchInterceptorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNTouchInterceptorView.m; sourceTree = "<group>"; };
+		01E451C31B8B3BD70011F1B1 /* NNKeyboardListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKeyboardListener.h; sourceTree = "<group>"; };
+		01E451C41B8B3BD70011F1B1 /* NNKeyboardListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKeyboardListener.m; sourceTree = "<group>"; };
+		01E451C51B8B3BD70011F1B1 /* UIScrollView+NNKeyboardListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+NNKeyboardListener.h"; sourceTree = "<group>"; };
+		01E451C61B8B3BD70011F1B1 /* UIScrollView+NNKeyboardListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+NNKeyboardListener.m"; sourceTree = "<group>"; };
+		01E451C81B8B3BD70011F1B1 /* NNLayoutSpacer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNLayoutSpacer.h; sourceTree = "<group>"; };
+		01E451C91B8B3BD70011F1B1 /* NNLayoutSpacer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNLayoutSpacer.m; sourceTree = "<group>"; };
+		01E451CA1B8B3BD70011F1B1 /* NNLayoutWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNLayoutWrapper.h; sourceTree = "<group>"; };
+		01E451CB1B8B3BD70011F1B1 /* NNLayoutWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNLayoutWrapper.m; sourceTree = "<group>"; };
+		01E451CC1B8B3BD70011F1B1 /* UIViewController+NNLayoutGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NNLayoutGuide.h"; sourceTree = "<group>"; };
+		01E451CD1B8B3BD70011F1B1 /* UIViewController+NNLayoutGuide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NNLayoutGuide.m"; sourceTree = "<group>"; };
+		01E451CF1B8B3BD70011F1B1 /* NNScrollViewWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNScrollViewWrapper.h; sourceTree = "<group>"; };
+		01E451D01B8B3BD70011F1B1 /* NNScrollViewWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNScrollViewWrapper.m; sourceTree = "<group>"; };
+		01E451D21B8B3BD70011F1B1 /* NNTouchInterceptorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNTouchInterceptorView.h; sourceTree = "<group>"; };
+		01E451D31B8B3BD70011F1B1 /* NNTouchInterceptorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNTouchInterceptorView.m; sourceTree = "<group>"; };
+		01E451D81B8B3BD70011F1B1 /* NNLazyProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNLazyProxy.h; sourceTree = "<group>"; };
+		01E451D91B8B3BD70011F1B1 /* NNLazyProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNLazyProxy.m; sourceTree = "<group>"; };
+		01E451DA1B8B3BD70011F1B1 /* NNObjectProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNObjectProxy.h; sourceTree = "<group>"; };
+		01E451DB1B8B3BD70011F1B1 /* NNObjectProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNObjectProxy.m; sourceTree = "<group>"; };
+		01E451E91B8B40B30011F1B1 /* NNAsyncInitProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNAsyncInitProxy.m; sourceTree = "<group>"; };
+		01E451EA1B8B40B30011F1B1 /* NSObject+NNProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NNProxy.m"; sourceTree = "<group>"; };
+		01E451EB1B8B40B30011F1B1 /* NSObject+NNProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NNProxy.h"; sourceTree = "<group>"; };
+		01E451EC1B8B40B30011F1B1 /* NNAsyncInitProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNAsyncInitProxy.h; sourceTree = "<group>"; };
 		388756A9802ED82CC4803654 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C140173AECCBB3559FDDCFDE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C432E71FF5EED05FB36A4294 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,10 +121,8 @@
 		01B3271F1B84994F00C6B2D8 /* Essentials */ = {
 			isa = PBXGroup;
 			children = (
-				01B327371B84996000C6B2D8 /* ScrollView */,
-				01B3273A1B84996000C6B2D8 /* Keyboard */,
-				01B3273F1B84996000C6B2D8 /* Layout */,
-				01B327461B84996000C6B2D8 /* Touch */,
+				01E451C11B8B3BD70011F1B1 /* Basic */,
+				01E451D41B8B3BD70011F1B1 /* Fancy */,
 				01B327201B84994F00C6B2D8 /* Essentials.h */,
 			);
 			path = Essentials;
@@ -134,50 +144,80 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		01B327371B84996000C6B2D8 /* ScrollView */ = {
+		01E451C11B8B3BD70011F1B1 /* Basic */ = {
 			isa = PBXGroup;
 			children = (
-				01B327381B84996000C6B2D8 /* NNScrollViewWrapper.h */,
-				01B327391B84996000C6B2D8 /* NNScrollViewWrapper.m */,
+				01E451C21B8B3BD70011F1B1 /* Keyboard */,
+				01E451C71B8B3BD70011F1B1 /* Layout */,
+				01E451CE1B8B3BD70011F1B1 /* ScrollView */,
+				01E451D11B8B3BD70011F1B1 /* Touch */,
 			);
-			name = ScrollView;
-			path = ../../Essentials2/Essentials/ScrollView;
+			path = Basic;
 			sourceTree = "<group>";
 		};
-		01B3273A1B84996000C6B2D8 /* Keyboard */ = {
+		01E451C21B8B3BD70011F1B1 /* Keyboard */ = {
 			isa = PBXGroup;
 			children = (
-				01B3273B1B84996000C6B2D8 /* NNKeyboardListener.h */,
-				01B3273C1B84996000C6B2D8 /* NNKeyboardListener.m */,
-				01B3273D1B84996000C6B2D8 /* UIScrollView+NNKeyboardListener.h */,
-				01B3273E1B84996000C6B2D8 /* UIScrollView+NNKeyboardListener.m */,
+				01E451C31B8B3BD70011F1B1 /* NNKeyboardListener.h */,
+				01E451C41B8B3BD70011F1B1 /* NNKeyboardListener.m */,
+				01E451C51B8B3BD70011F1B1 /* UIScrollView+NNKeyboardListener.h */,
+				01E451C61B8B3BD70011F1B1 /* UIScrollView+NNKeyboardListener.m */,
 			);
-			name = Keyboard;
-			path = ../../Essentials2/Essentials/Keyboard;
+			path = Keyboard;
 			sourceTree = "<group>";
 		};
-		01B3273F1B84996000C6B2D8 /* Layout */ = {
+		01E451C71B8B3BD70011F1B1 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
-				01B327401B84996000C6B2D8 /* NNLayoutSpacer.h */,
-				01B327411B84996000C6B2D8 /* NNLayoutSpacer.m */,
-				01B327421B84996000C6B2D8 /* NNLayoutWrapper.h */,
-				01B327431B84996000C6B2D8 /* NNLayoutWrapper.m */,
-				01B327441B84996000C6B2D8 /* UIViewController+NNLayoutGuide.h */,
-				01B327451B84996000C6B2D8 /* UIViewController+NNLayoutGuide.m */,
+				01E451C81B8B3BD70011F1B1 /* NNLayoutSpacer.h */,
+				01E451C91B8B3BD70011F1B1 /* NNLayoutSpacer.m */,
+				01E451CA1B8B3BD70011F1B1 /* NNLayoutWrapper.h */,
+				01E451CB1B8B3BD70011F1B1 /* NNLayoutWrapper.m */,
+				01E451CC1B8B3BD70011F1B1 /* UIViewController+NNLayoutGuide.h */,
+				01E451CD1B8B3BD70011F1B1 /* UIViewController+NNLayoutGuide.m */,
 			);
-			name = Layout;
-			path = ../../Essentials2/Essentials/Layout;
+			path = Layout;
 			sourceTree = "<group>";
 		};
-		01B327461B84996000C6B2D8 /* Touch */ = {
+		01E451CE1B8B3BD70011F1B1 /* ScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				01B327471B84996000C6B2D8 /* NNTouchInterceptorView.h */,
-				01B327481B84996000C6B2D8 /* NNTouchInterceptorView.m */,
+				01E451CF1B8B3BD70011F1B1 /* NNScrollViewWrapper.h */,
+				01E451D01B8B3BD70011F1B1 /* NNScrollViewWrapper.m */,
 			);
-			name = Touch;
-			path = ../../Essentials2/Essentials/Touch;
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		01E451D11B8B3BD70011F1B1 /* Touch */ = {
+			isa = PBXGroup;
+			children = (
+				01E451D21B8B3BD70011F1B1 /* NNTouchInterceptorView.h */,
+				01E451D31B8B3BD70011F1B1 /* NNTouchInterceptorView.m */,
+			);
+			path = Touch;
+			sourceTree = "<group>";
+		};
+		01E451D41B8B3BD70011F1B1 /* Fancy */ = {
+			isa = PBXGroup;
+			children = (
+				01E451D51B8B3BD70011F1B1 /* Proxy */,
+			);
+			path = Fancy;
+			sourceTree = "<group>";
+		};
+		01E451D51B8B3BD70011F1B1 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				01E451EB1B8B40B30011F1B1 /* NSObject+NNProxy.h */,
+				01E451EA1B8B40B30011F1B1 /* NSObject+NNProxy.m */,
+				01E451D81B8B3BD70011F1B1 /* NNLazyProxy.h */,
+				01E451D91B8B3BD70011F1B1 /* NNLazyProxy.m */,
+				01E451EC1B8B40B30011F1B1 /* NNAsyncInitProxy.h */,
+				01E451E91B8B40B30011F1B1 /* NNAsyncInitProxy.m */,
+				01E451DA1B8B3BD70011F1B1 /* NNObjectProxy.h */,
+				01E451DB1B8B3BD70011F1B1 /* NNObjectProxy.m */,
+			);
+			path = Proxy;
 			sourceTree = "<group>";
 		};
 		4A6B00112A7DD06DD19455D5 /* Pods */ = {
@@ -320,13 +360,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01B3274A1B84996000C6B2D8 /* NNKeyboardListener.m in Sources */,
-				01B3274E1B84996000C6B2D8 /* UIViewController+NNLayoutGuide.m in Sources */,
-				01B3274D1B84996000C6B2D8 /* NNLayoutWrapper.m in Sources */,
-				01B3274F1B84996000C6B2D8 /* NNTouchInterceptorView.m in Sources */,
-				01B3274B1B84996000C6B2D8 /* UIScrollView+NNKeyboardListener.m in Sources */,
-				01B3274C1B84996000C6B2D8 /* NNLayoutSpacer.m in Sources */,
-				01B327491B84996000C6B2D8 /* NNScrollViewWrapper.m in Sources */,
+				01E451DF1B8B3BD70011F1B1 /* UIScrollView+NNKeyboardListener.m in Sources */,
+				01E451ED1B8B40B30011F1B1 /* NNAsyncInitProxy.m in Sources */,
+				01E451E71B8B3BD70011F1B1 /* NNObjectProxy.m in Sources */,
+				01E451E31B8B3BD70011F1B1 /* NNScrollViewWrapper.m in Sources */,
+				01E451E41B8B3BD70011F1B1 /* NNTouchInterceptorView.m in Sources */,
+				01E451E01B8B3BD70011F1B1 /* NNLayoutSpacer.m in Sources */,
+				01E451DE1B8B3BD70011F1B1 /* NNKeyboardListener.m in Sources */,
+				01E451EE1B8B40B30011F1B1 /* NSObject+NNProxy.m in Sources */,
+				01E451E61B8B3BD70011F1B1 /* NNLazyProxy.m in Sources */,
+				01E451E21B8B3BD70011F1B1 /* UIViewController+NNLayoutGuide.m in Sources */,
+				01E451E11B8B3BD70011F1B1 /* NNLayoutWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
