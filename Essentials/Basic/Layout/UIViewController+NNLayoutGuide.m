@@ -7,26 +7,56 @@
 //
 
 #import "UIViewController+NNLayoutGuide.h"
-#import "NNLayoutSpacer.h"
-#import <Masonry/Masonry.h>
 #import <objc/runtime.h>
 
 @implementation UIViewController (NNLayoutGuide)
 
-static void * const kLayoutGuideKey = (void *)&kLayoutGuideKey;
-
 - (UIView *)nn_layoutGuide {
-    UIView *layoutGuide = objc_getAssociatedObject(self, kLayoutGuideKey);
+    UIView *layoutGuide = objc_getAssociatedObject(self, _cmd);
     if (!layoutGuide || !layoutGuide.superview) {
-        layoutGuide = [[NNLayoutSpacer alloc] init];
+        layoutGuide = [[UIView alloc] init];
+        layoutGuide.userInteractionEnabled = NO;
+        layoutGuide.hidden = YES;
+        layoutGuide.translatesAutoresizingMaskIntoConstraints = NO;
         [self.view addSubview:layoutGuide];
-        [layoutGuide mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(((UIView *)self.topLayoutGuide).mas_bottom);
-            make.bottom.equalTo(((UIView *)self.bottomLayoutGuide).mas_top);
-            make.left.and.right.equalTo(self.view);
-        }];
         
-        objc_setAssociatedObject(self, kLayoutGuideKey, layoutGuide, OBJC_ASSOCIATION_RETAIN);
+        NSArray *constraints = @[
+            [NSLayoutConstraint constraintWithItem:layoutGuide
+                                         attribute:NSLayoutAttributeTop
+                                         relatedBy:NSLayoutRelationEqual
+                                            toItem:self.topLayoutGuide
+                                         attribute:NSLayoutAttributeBottom
+                                        multiplier:1.0
+                                          constant:0.0],
+            
+            [NSLayoutConstraint constraintWithItem:layoutGuide
+                                         attribute:NSLayoutAttributeBottom
+                                         relatedBy:NSLayoutRelationEqual
+                                            toItem:self.bottomLayoutGuide
+                                         attribute:NSLayoutAttributeTop
+                                        multiplier:1.0
+                                          constant:0.0],
+            
+            [NSLayoutConstraint constraintWithItem:layoutGuide
+                                         attribute:NSLayoutAttributeLeft
+                                         relatedBy:NSLayoutRelationEqual
+                                            toItem:self.view
+                                         attribute:NSLayoutAttributeLeft
+                                        multiplier:1.0
+                                          constant:0.0],
+            
+            [NSLayoutConstraint constraintWithItem:layoutGuide
+                                         attribute:NSLayoutAttributeRight
+                                         relatedBy:NSLayoutRelationEqual
+                                            toItem:self.view
+                                         attribute:NSLayoutAttributeRight
+                                        multiplier:1.0
+                                          constant:0.0]
+        ];
+        
+        [self.view addConstraints:constraints];
+        
+        objc_setAssociatedObject(self, _cmd, layoutGuide, OBJC_ASSOCIATION_RETAIN);
     }
     return layoutGuide;
 }
