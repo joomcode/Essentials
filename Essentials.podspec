@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Essentials"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A bunch of stuff I can't live without."
 
   s.homepage     = "https://github.com/nickynick/Essentials"
@@ -12,18 +12,21 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
   
-  s.source       = { :git => "https://github.com/nickynick/Essentials.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/nickynick/Essentials.git", :tag => "0.0.2" }
   
   s.requires_arc = true
   
-  s.dependency "Masonry", "~> 0.5"
-
   s.subspec 'Basic' do |ss|
     ss.source_files = "Essentials/Basic/**/*.{h,m}"
   end
 
   s.subspec 'Fancy' do |ss|
-    ss.source_files = "Essentials/Fancy/**/*.{h,m}"    
+    ss.source_files = "Essentials/Fancy/**/*.{h,m}"
+  end
+
+  s.subspec 'Masonry' do |ss|
+    ss.source_files = "Essentials/Masonry/**/*.{h,m}"
+    ss.dependency "Masonry", "~> 0.5"
   end
 
   s.default_subspec = 'Basic'

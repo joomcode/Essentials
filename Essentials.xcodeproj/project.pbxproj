@@ -10,7 +10,6 @@
 		01B327291B84994F00C6B2D8 /* libEssentials.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B3271D1B84994F00C6B2D8 /* libEssentials.a */; };
 		01E451DE1B8B3BD70011F1B1 /* NNKeyboardListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E451C41B8B3BD70011F1B1 /* NNKeyboardListener.m */; };
 		01E451DF1B8B3BD70011F1B1 /* UIScrollView+NNKeyboardListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E451C61B8B3BD70011F1B1 /* UIScrollView+NNKeyboardListener.m */; };
-		01E451E01B8B3BD70011F1B1 /* NNLayoutSpacer.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E451C91B8B3BD70011F1B1 /* NNLayoutSpacer.m */; };
 		01E451E11B8B3BD70011F1B1 /* NNLayoutWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E451CB1B8B3BD70011F1B1 /* NNLayoutWrapper.m */; };
 		01E451E21B8B3BD70011F1B1 /* UIViewController+NNLayoutGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E451CD1B8B3BD70011F1B1 /* UIViewController+NNLayoutGuide.m */; };
 		01E451E31B8B3BD70011F1B1 /* NNScrollViewWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E451D01B8B3BD70011F1B1 /* NNScrollViewWrapper.m */; };
@@ -19,6 +18,7 @@
 		01E451E71B8B3BD70011F1B1 /* NNObjectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E451DB1B8B3BD70011F1B1 /* NNObjectProxy.m */; };
 		01E451ED1B8B40B30011F1B1 /* NNAsyncInitProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E451E91B8B40B30011F1B1 /* NNAsyncInitProxy.m */; };
 		01E451EE1B8B40B30011F1B1 /* NSObject+NNProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E451EA1B8B40B30011F1B1 /* NSObject+NNProxy.m */; };
+		01E451F41B8B45050011F1B1 /* NNLayoutSpacer.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E451F31B8B45050011F1B1 /* NNLayoutSpacer.m */; };
 		A2233A48A76222F60534A4C2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C140173AECCBB3559FDDCFDE /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -52,8 +52,6 @@
 		01E451C41B8B3BD70011F1B1 /* NNKeyboardListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNKeyboardListener.m; sourceTree = "<group>"; };
 		01E451C51B8B3BD70011F1B1 /* UIScrollView+NNKeyboardListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+NNKeyboardListener.h"; sourceTree = "<group>"; };
 		01E451C61B8B3BD70011F1B1 /* UIScrollView+NNKeyboardListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+NNKeyboardListener.m"; sourceTree = "<group>"; };
-		01E451C81B8B3BD70011F1B1 /* NNLayoutSpacer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNLayoutSpacer.h; sourceTree = "<group>"; };
-		01E451C91B8B3BD70011F1B1 /* NNLayoutSpacer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNLayoutSpacer.m; sourceTree = "<group>"; };
 		01E451CA1B8B3BD70011F1B1 /* NNLayoutWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNLayoutWrapper.h; sourceTree = "<group>"; };
 		01E451CB1B8B3BD70011F1B1 /* NNLayoutWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNLayoutWrapper.m; sourceTree = "<group>"; };
 		01E451CC1B8B3BD70011F1B1 /* UIViewController+NNLayoutGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NNLayoutGuide.h"; sourceTree = "<group>"; };
@@ -72,6 +70,9 @@
 		01E451EC1B8B40B30011F1B1 /* NNAsyncInitProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNAsyncInitProxy.h; sourceTree = "<group>"; };
 		01E451EF1B8B41310011F1B1 /* Fancy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fancy.h; sourceTree = "<group>"; };
 		01E451F01B8B415C0011F1B1 /* Essentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Essentials.h; sourceTree = "<group>"; };
+		01E451F21B8B45050011F1B1 /* NNLayoutSpacer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNLayoutSpacer.h; sourceTree = "<group>"; };
+		01E451F31B8B45050011F1B1 /* NNLayoutSpacer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNLayoutSpacer.m; sourceTree = "<group>"; };
+		01E451F51B8B45260011F1B1 /* Masonry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
 		388756A9802ED82CC4803654 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C140173AECCBB3559FDDCFDE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C432E71FF5EED05FB36A4294 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +123,7 @@
 			children = (
 				01E451C11B8B3BD70011F1B1 /* Basic */,
 				01E451D41B8B3BD70011F1B1 /* Fancy */,
+				01E451F11B8B45050011F1B1 /* Masonry */,
 			);
 			path = Essentials;
 			sourceTree = "<group>";
@@ -168,8 +170,6 @@
 		01E451C71B8B3BD70011F1B1 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
-				01E451C81B8B3BD70011F1B1 /* NNLayoutSpacer.h */,
-				01E451C91B8B3BD70011F1B1 /* NNLayoutSpacer.m */,
 				01E451CA1B8B3BD70011F1B1 /* NNLayoutWrapper.h */,
 				01E451CB1B8B3BD70011F1B1 /* NNLayoutWrapper.m */,
 				01E451CC1B8B3BD70011F1B1 /* UIViewController+NNLayoutGuide.h */,
@@ -218,6 +218,16 @@
 				01E451DB1B8B3BD70011F1B1 /* NNObjectProxy.m */,
 			);
 			path = Proxy;
+			sourceTree = "<group>";
+		};
+		01E451F11B8B45050011F1B1 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				01E451F51B8B45260011F1B1 /* Masonry.h */,
+				01E451F21B8B45050011F1B1 /* NNLayoutSpacer.h */,
+				01E451F31B8B45050011F1B1 /* NNLayoutSpacer.m */,
+			);
+			path = Masonry;
 			sourceTree = "<group>";
 		};
 		4A6B00112A7DD06DD19455D5 /* Pods */ = {
@@ -363,9 +373,9 @@
 				01E451DF1B8B3BD70011F1B1 /* UIScrollView+NNKeyboardListener.m in Sources */,
 				01E451ED1B8B40B30011F1B1 /* NNAsyncInitProxy.m in Sources */,
 				01E451E71B8B3BD70011F1B1 /* NNObjectProxy.m in Sources */,
+				01E451F41B8B45050011F1B1 /* NNLayoutSpacer.m in Sources */,
 				01E451E31B8B3BD70011F1B1 /* NNScrollViewWrapper.m in Sources */,
 				01E451E41B8B3BD70011F1B1 /* NNTouchInterceptorView.m in Sources */,
-				01E451E01B8B3BD70011F1B1 /* NNLayoutSpacer.m in Sources */,
 				01E451DE1B8B3BD70011F1B1 /* NNKeyboardListener.m in Sources */,
 				01E451EE1B8B40B30011F1B1 /* NSObject+NNProxy.m in Sources */,
 				01E451E61B8B3BD70011F1B1 /* NNLazyProxy.m in Sources */,
