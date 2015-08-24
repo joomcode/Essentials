@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01B327211B84994F00C6B2D8 /* Essentials.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01B327201B84994F00C6B2D8 /* Essentials.h */; };
 		01B327291B84994F00C6B2D8 /* libEssentials.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B3271D1B84994F00C6B2D8 /* libEssentials.a */; };
 		01E451DE1B8B3BD70011F1B1 /* NNKeyboardListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E451C41B8B3BD70011F1B1 /* NNKeyboardListener.m */; };
 		01E451DF1B8B3BD70011F1B1 /* UIScrollView+NNKeyboardListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E451C61B8B3BD70011F1B1 /* UIScrollView+NNKeyboardListener.m */; };
@@ -40,7 +39,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				01B327211B84994F00C6B2D8 /* Essentials.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +46,6 @@
 
 /* Begin PBXFileReference section */
 		01B3271D1B84994F00C6B2D8 /* libEssentials.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEssentials.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		01B327201B84994F00C6B2D8 /* Essentials.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Essentials.h; sourceTree = "<group>"; };
 		01B327281B84994F00C6B2D8 /* EssentialsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01B3272E1B84994F00C6B2D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01E451C31B8B3BD70011F1B1 /* NNKeyboardListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNKeyboardListener.h; sourceTree = "<group>"; };
@@ -73,6 +70,8 @@
 		01E451EA1B8B40B30011F1B1 /* NSObject+NNProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NNProxy.m"; sourceTree = "<group>"; };
 		01E451EB1B8B40B30011F1B1 /* NSObject+NNProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NNProxy.h"; sourceTree = "<group>"; };
 		01E451EC1B8B40B30011F1B1 /* NNAsyncInitProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNAsyncInitProxy.h; sourceTree = "<group>"; };
+		01E451EF1B8B41310011F1B1 /* Fancy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fancy.h; sourceTree = "<group>"; };
+		01E451F01B8B415C0011F1B1 /* Essentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Essentials.h; sourceTree = "<group>"; };
 		388756A9802ED82CC4803654 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C140173AECCBB3559FDDCFDE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C432E71FF5EED05FB36A4294 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,7 +122,6 @@
 			children = (
 				01E451C11B8B3BD70011F1B1 /* Basic */,
 				01E451D41B8B3BD70011F1B1 /* Fancy */,
-				01B327201B84994F00C6B2D8 /* Essentials.h */,
 			);
 			path = Essentials;
 			sourceTree = "<group>";
@@ -151,6 +149,7 @@
 				01E451C71B8B3BD70011F1B1 /* Layout */,
 				01E451CE1B8B3BD70011F1B1 /* ScrollView */,
 				01E451D11B8B3BD70011F1B1 /* Touch */,
+				01E451F01B8B415C0011F1B1 /* Essentials.h */,
 			);
 			path = Basic;
 			sourceTree = "<group>";
@@ -201,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				01E451D51B8B3BD70011F1B1 /* Proxy */,
+				01E451EF1B8B41310011F1B1 /* Fancy.h */,
 			);
 			path = Fancy;
 			sourceTree = "<group>";

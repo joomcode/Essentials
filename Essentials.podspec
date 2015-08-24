@@ -13,11 +13,18 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   
   s.source       = { :git => "https://github.com/nickynick/Essentials.git", :tag => "0.0.1" }
-
-  s.source_files        = "Essentials/**/*.{h,m}"
-  s.public_header_files = "Essentials/**/*.h"
-
+  
   s.requires_arc = true
   
   s.dependency "Masonry", "~> 0.5"
+
+  s.subspec 'Basic' do |ss|
+    ss.source_files = "Essentials/Basic/**/*.{h,m}"
+  end
+
+  s.subspec 'Fancy' do |ss|
+    ss.source_files = "Essentials/Fancy/**/*.{h,m}"    
+  end
+
+  s.default_subspec = 'Basic'
 end
