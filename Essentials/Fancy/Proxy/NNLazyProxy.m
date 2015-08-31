@@ -10,7 +10,7 @@
 
 @implementation NNLazyProxy {
 @protected
-    id _object;
+    volatile id _object;
     Class _objectClass;
     NSInvocation *_initInvocation;
     dispatch_semaphore_t _initSemaphore;
