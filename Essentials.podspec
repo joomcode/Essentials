@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Essentials"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "A bunch of stuff I can't live without."
 
   s.homepage     = "https://github.com/nickynick/Essentials"
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
   
-  s.source       = { :git => "https://github.com/nickynick/Essentials.git", :tag => "0.0.5" }
+  s.source       = { :git => "https://github.com/nickynick/Essentials.git", :tag => "0.0.6" }
   
   s.requires_arc = true
   
