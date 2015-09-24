@@ -10,8 +10,8 @@
 
 @implementation NNAsyncInitProxy
 
-- (void)_didCaptureInitInvocation {
-    [super _didCaptureInitInvocation];
+- (void)_didBecomeAbleToInstantiateObject {
+    [super _didBecomeAbleToInstantiateObject];
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         [self _instantiateObjectIfNeeded];

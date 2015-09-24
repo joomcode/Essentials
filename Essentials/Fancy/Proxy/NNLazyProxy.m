@@ -12,15 +12,26 @@
 @protected
     volatile id _object;
     Class _objectClass;
-    NSInvocation *_initInvocation;
+    NNLazyProxyInitBlock _initBlock;
     dispatch_semaphore_t _initSemaphore;
 }
 
 #pragma mark - Init
 
 - (instancetype)initWithClass:(Class)aClass {
+    return [self initWithClass:aClass block:nil];
+}
+
+- (instancetype)initWithClass:(Class)aClass block:(NNLazyProxyInitBlock)block {
     _objectClass = aClass;
+    _initBlock = [block copy];
+    
     _initSemaphore = dispatch_semaphore_create(1);
+    
+    if (_initBlock) {
+        [self _didBecomeAbleToInstantiateObject];
+    }
+    
     return self;
 }
 
@@ -37,16 +48,11 @@
             return;
         }
         
-        id object = [_objectClass alloc];
-        
-        if (_initInvocation) {
-            [_initInvocation invokeWithTarget:object];
-            [_initInvocation getReturnValue:&object];
-            _initInvocation = nil;
-            
-            _object = object;
+        if (_initBlock) {
+            _object = _initBlock();
+            _initBlock = nil;
         } else {
-            _object = [object init];
+            _object = [[_objectClass alloc] init];
         }
         
         dispatch_semaphore_signal(_initSemaphore);
@@ -58,7 +64,7 @@
 
 #pragma mark - Subclassing hooks
 
-- (void)_didCaptureInitInvocation {
+- (void)_didBecomeAbleToInstantiateObject {
 }
 
 #pragma mark - NSProxy
@@ -78,15 +84,22 @@
 }
 
 - (void)forwardInvocation:(NSInvocation *)invocation {
-    // If we got here, it had to be from an init method
+    // If we got here, it had to be from an init method.
     
-    _initInvocation = invocation;
-    [_initInvocation setTarget:nil]; // not needed, and we don't want to retain
-    [_initInvocation retainArguments];
-    // For the immediate init(With...) call, return the proxy itself
-    [_initInvocation setReturnValue:(void *)&self];
+    [invocation setTarget:nil]; // not needed, and we don't want to retain
+    [invocation retainArguments];
+    [invocation setReturnValue:(void *)&self]; // for the immediate init(With...) call, return the proxy itself
+
+    Class objectClass = _objectClass;
     
-    [self _didCaptureInitInvocation];
+    _initBlock = ^{
+        id object = [objectClass alloc];
+        [invocation invokeWithTarget:object];
+        [invocation getReturnValue:&object];
+        return object;
+    };
+    
+    [self _didBecomeAbleToInstantiateObject];
 }
 
 #pragma mark - NSObject protocol
