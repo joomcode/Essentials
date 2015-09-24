@@ -32,6 +32,11 @@
     }
     
     if (dispatch_semaphore_wait(_initSemaphore, DISPATCH_TIME_NOW) == 0) {
+        if (_object) {
+            dispatch_semaphore_signal(_initSemaphore);
+            return;
+        }
+        
         id object = [_objectClass alloc];
         
         if (_initInvocation) {
