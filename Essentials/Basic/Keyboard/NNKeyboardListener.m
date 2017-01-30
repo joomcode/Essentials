@@ -109,12 +109,14 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChangeFrame:) name:UIKeyboardWillChangeFrameNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidHide:) name:UIKeyboardDidHideNotification object:nil];
 }
 
 - (void)unregisterFromNotifications {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillChangeFrameNotification object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardDidHideNotification object:nil];
 }
 
 #pragma mark Public
@@ -144,6 +146,14 @@
 {
     if (!self.keyboardVisible) return;
     self.keyboardVisible = NO;
+    
+    [self resizeForKeyboardNotification:notification];
+}
+
+- (void)keyboardDidHide:(NSNotification *)notification
+{
+    // UIKit sends UIKeyboardDidHideNotification several times, with different frame values. So don't skip
+    // duplicated notifications here
     
     [self resizeForKeyboardNotification:notification];
 }
