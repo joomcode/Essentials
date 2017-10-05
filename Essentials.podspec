@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Masonry' do |ss|
     ss.source_files = "Essentials/Masonry/**/*.{h,m}"
-    ss.dependency "Masonry", "~> 0.5"
+    ss.dependency "Masonry"
   end
 
   s.default_subspec = 'Basic'
