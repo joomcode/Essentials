@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "NNObjectProxy.h"
 
-typedef id (^NNLazyProxyInitBlock)();
+typedef id (^NNLazyProxyInitBlock)(void);
 
 @interface NNLazyProxy : NSProxy 
 

@@ -164,7 +164,7 @@
     NSTimeInterval animationDuration = [userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
     UIViewAnimationCurve animationCurve = [userInfo[UIKeyboardAnimationCurveUserInfoKey] intValue];
     
-    void (^animateAlongsideKeyboard)(void (^)()) = ^(void (^animations)()){
+    void (^animateAlongsideKeyboard)(void (^)(void)) = ^(void (^animations)(void)){
         [UIView animateWithDuration:animationDuration delay:0 options:UIViewAnimationOptionBeginFromCurrentState | [self animationOptionsWithCurve:animationCurve] animations:^{
             animations();
         } completion:nil];
@@ -179,7 +179,7 @@
         // Set viewCoveredHeight inside animation block for benefit of our KVO friends.
         [self updateViewCoveredHeightWithNotification:notification];
         
-        if (_layoutGuide) {
+        if (self->_layoutGuide) {
             [self.view layoutIfNeeded];
         }
     });

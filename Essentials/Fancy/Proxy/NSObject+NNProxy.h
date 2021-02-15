@@ -13,9 +13,9 @@
 @interface NSObject (NNProxy)
 
 + (instancetype)nn_lazy;
-+ (instancetype)nn_lazyInitWithBlock:(id (^)())block;
++ (instancetype)nn_lazyInitWithBlock:(id (^)(void))block;
 
 + (instancetype)nn_async;
-+ (instancetype)nn_asyncInitWithBlock:(id (^)())block;
++ (instancetype)nn_asyncInitWithBlock:(id (^)(void))block;
 
 @end

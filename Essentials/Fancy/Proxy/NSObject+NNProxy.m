@@ -16,7 +16,7 @@
     return (id)[[NNLazyProxy alloc] initWithClass:[self class]];
 }
 
-+ (instancetype)nn_lazyInitWithBlock:(id (^)())block {
++ (instancetype)nn_lazyInitWithBlock:(id (^)(void))block {
     NSParameterAssert(block != nil);
     return (id)[[NNLazyProxy alloc] initWithClass:[self class] block:block];
 }
@@ -25,7 +25,7 @@
     return (id)[[NNAsyncInitProxy alloc] initWithClass:[self class]];
 }
 
-+ (instancetype)nn_asyncInitWithBlock:(id (^)())block {
++ (instancetype)nn_asyncInitWithBlock:(id (^)(void))block {
     NSParameterAssert(block != nil);
     return (id)[[NNAsyncInitProxy alloc] initWithClass:[self class] block:block];
 }

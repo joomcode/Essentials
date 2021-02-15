@@ -7,7 +7,7 @@
 //
 
 #import "NNScrollViewWrapper.h"
-#import <Masonry/Masonry.h>
+@import Masonry;
 
 @interface NNScrollViewContentView : UIView
 
@@ -83,7 +83,7 @@
     }];
     
     [_contentView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.and.left.equalTo(_scrollView);
+        make.top.and.left.equalTo(self->_scrollView);
     }];
 }
 

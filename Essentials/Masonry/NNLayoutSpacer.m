@@ -7,7 +7,7 @@
 //
 
 #import "NNLayoutSpacer.h"
-#import <Masonry/Masonry.h>
+@import Masonry;
 
 @implementation NNLayoutSpacer
 
