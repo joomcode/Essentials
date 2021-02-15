@@ -30,22 +30,7 @@
 		55DED1DC25BEC2CE004C02F9 /* NSObject+NNProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E451EB1B8B40B30011F1B1 /* NSObject+NNProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55DED1E125BEC2E9004C02F9 /* NNLayoutSpacer.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E451F21B8B45050011F1B1 /* NNLayoutSpacer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55DED1E725BEC6C8004C02F9 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DED1E625BEC6C8004C02F9 /* Masonry.framework */; };
-		55DED1E825BEC6C8004C02F9 /* Masonry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55DED1E625BEC6C8004C02F9 /* Masonry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		55DED1E925BEC6C8004C02F9 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				55DED1E825BEC6C8004C02F9 /* Masonry.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		01B327281B84994F00C6B2D8 /* EssentialsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -287,7 +272,6 @@
 				55DED17B25BEC192004C02F9 /* Sources */,
 				55DED17C25BEC192004C02F9 /* Frameworks */,
 				55DED17D25BEC192004C02F9 /* Resources */,
-				55DED1E925BEC6C8004C02F9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
