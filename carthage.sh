@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # carthage.sh
-# Usage example: ./carthage.sh build --platform iOS
+# Usage example: ./carthage.sh build --cache-builds --no-use-binaries --configuration Debug --platform iOS
 
 set -euo pipefail
 
