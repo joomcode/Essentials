@@ -9,14 +9,18 @@
 #import <Foundation/Foundation.h>
 #import "NNObjectProxy.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef id (^NNLazyProxyInitBlock)(void);
 
 @interface NNLazyProxy : NSProxy 
 
 - (instancetype)initWithClass:(Class)aClass;
-- (instancetype)initWithClass:(Class)aClass block:(NNLazyProxyInitBlock)block;
+- (instancetype)initWithClass:(Class)aClass block:(nullable NNLazyProxyInitBlock)block;
 
 - (void)_instantiateObjectIfNeeded;
 - (void)_didBecomeAbleToInstantiateObject;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -10,6 +10,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface NSObject (NNProxy)
 
 + (instancetype)nn_lazy;
@@ -19,3 +21,5 @@
 + (instancetype)nn_asyncInitWithBlock:(id (^)(void))block;
 
 @end
+
+NS_ASSUME_NONNULL_END
