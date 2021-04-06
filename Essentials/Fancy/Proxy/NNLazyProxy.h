@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef id (^NNLazyProxyInitBlock)(void);
+typedef id _Nonnull (^NNLazyProxyInitBlock)(void);
 
 @interface NNLazyProxy : NSProxy 
 
