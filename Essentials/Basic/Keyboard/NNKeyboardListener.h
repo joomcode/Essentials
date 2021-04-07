@@ -9,19 +9,21 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef void (^NNKeyboardListenerBlock)(NSNotification *notification, CGFloat viewCoveredHeight);
 
 
 @interface NNKeyboardListener : NSObject
 
-@property (nonatomic, weak, readonly) UIView *view;
+@property (nonatomic, weak, readonly, nullable) UIView *view;
 
 @property (nonatomic, readonly) CGFloat viewCoveredHeight;
 
 @property (nonatomic, assign, getter = isEnabled) BOOL enabled;
 
 // Return YES to animate layoutGuide constraints update.
-@property (nonatomic, copy) NNKeyboardListenerBlock animationBlock;
+@property (nonatomic, copy, nullable) NNKeyboardListenerBlock animationBlock;
 
 // When accessed for the first time, will add a hidden subview to the view.
 // Edges of this subview represent portion of the view which is not covered by the keyboard.
@@ -32,11 +34,13 @@ typedef void (^NNKeyboardListenerBlock)(NSNotification *notification, CGFloat vi
 // It is useful when keyboard appears before view has been added to its container (e.g., -viewWillAppear:).
 @property (nonatomic, assign) BOOL usesWindowForOrphanView;
 
-- (id)initWithView:(UIView *)view;
+- (instancetype)initWithView:(nullable UIView *)view;
 
-- (id)initWithView:(UIView *)view animationBlock:(NNKeyboardListenerBlock)animationBlock NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithView:(nullable UIView *)view animationBlock:(nullable NNKeyboardListenerBlock)animationBlock NS_DESIGNATED_INITIALIZER;
 
 // Use this method to adapt to view frame changes.
 - (void)updateViewCoveredHeight;
 
 @end
+
+NS_ASSUME_NONNULL_END

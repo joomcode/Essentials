@@ -24,15 +24,15 @@
 
 #pragma mark Init
 
-- (id)init {
+- (instancetype)init {
     return [self initWithView:nil];
 }
 
-- (id)initWithView:(UIView *)view {
+- (instancetype)initWithView:(UIView *)view {
     return [self initWithView:view animationBlock:nil];
 }
 
-- (id)initWithView:(UIView *)view animationBlock:(NNKeyboardListenerBlock)animationBlock {
+- (instancetype)initWithView:(UIView *)view animationBlock:(NNKeyboardListenerBlock)animationBlock {
     NSParameterAssert(view != nil);
     
     self = [super init];
@@ -213,7 +213,7 @@
     }
     
     CGRect keyboardFrameInWindow = [window convertRect:keyboardFrame fromView:nil];
-    if (CGSizeEqualToSize(CGRectIntersection(window.bounds, keyboardFrameInWindow).size, CGSizeZero)) {
+    if (CGRectIsEmpty(CGRectIntersection(window.bounds, keyboardFrameInWindow))) {
         return 0;
     }
     
