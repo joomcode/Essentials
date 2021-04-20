@@ -1,1 +1,1 @@
-github "SnapKit/Masonry" >= 0.6.2
+github "https://github.com/joomcode/Masonry" "feature/carthage"
